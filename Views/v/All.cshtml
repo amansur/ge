@@ -1,0 +1,11 @@
+@model IEnumerable<Photo>
+
+@foreach(var photo in @Model)
+{
+	<div>
+		@photo.Id
+		@photo.PhotoUid
+		@photo.Slug
+		@photo.FilePath
+	</div>
+}
